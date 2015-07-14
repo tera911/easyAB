@@ -256,6 +256,10 @@
           }
           _track(options);
       }
+      var _default_func = options['default-func'];
+      if(typeof default-func == 'function'){
+        default-func();
+      }
       return this.each(function() {
         var $this = $(this);
         if (_bucket !== 0) {
