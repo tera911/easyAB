@@ -257,8 +257,8 @@
           _track(options);
       }
       var _default_func = options['default-func'];
-      if(typeof default-func == 'function'){
-        default-func();
+      if(typeof _default_func == 'function'){
+        _default_func();
       }
       return this.each(function() {
         var $this = $(this);
