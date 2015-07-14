@@ -256,14 +256,16 @@
           }
           _track(options);
       }
-      var _default_func = options['default-func'];
-      if(typeof _default_func == 'function'){
-        _default_func();
-      }
+
       return this.each(function() {
         var $this = $(this);
         if (_bucket !== 0) {
           _display($this);
+        }else{
+          var _default_func = options['default-func'];
+          if(typeof _default_func == 'function'){
+            _default_func();
+          }
         }
       });
     }
